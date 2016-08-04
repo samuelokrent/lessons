@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Example HTML!</title>
+		<script type="text/javascript">
+			function runScript() {
+				var argToPass = document.getElementById("my_input").value;
+				doStuff(argToPass);
+			}
+
+			function doStuff(param) {
+				
+				console.log(param);
+
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="my_input" />
+		<button onclick="runScript();">Run!</button>
+	</body>
+	
+</html>
