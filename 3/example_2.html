@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Example HTML!</title>
+		<script src="example_2.js"></script>
+		<script type="text/javascript">
+			function runScript() {
+				var argToPass = document.getElementById("my_input").value;
+				var arr = argToPass.split(' ');
+				arr = arr.map(function(item) {
+					return isNaN(parseInt(item)) ? item : parseInt(item);
+				});
+				doArrayStuff(arr);
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="my_input" />
+		<button onclick="runScript();">Run!</button>
+
+		<br>
+
+		<p style="margin-top:50px;">To do:</p>
+		<ul>
+			<li>Review</li>
+			<li>Loops</li>
+			<li>Arrays</li>
+			<li>Practice writing functions</li>
+			<li>Environment setup/Git?</li>
+		</ul>
+	</body>
+	
+</html>
