@@ -1,0 +1,227 @@
+/*
+	The slash star means this is all a comment!
+
+	A little review
+
+	Variables:
+		
+		Declaration:
+			
+			var someVarName = "A value!";
+
+		Types:
+	
+			Variables can hold different data types,
+			the ones we've talked about are...
+			1. Numbers (var myVar = 37;)
+			2. Booleans (var myVar = false;)
+			3. Strings (var myVar = "Hello, world!";)
+
+	Functions:
+
+		Without parameters:
+
+			function myFuncName() {
+				// any code in here gets executed when you call myFuncName()
+			}
+		
+		With parameters:
+
+			function myFuncWithParams(param1, param2, bob) {
+				// any code in here gets executed when you call myFuncWithParams()
+				// Inside this function, you have access to the values passed in as parameters
+				// e.g. var bobPlusOne = bob + 1;
+			}
+
+	If/else statement:
+
+		if( some condition ) {
+			// code in here gets executed if the condition is true
+		} else {
+			// code in here gets execued if the condition is not true
+		}
+
+		Example:
+
+			if(myVar == "banana") {
+				console.log("It's banana");
+				numberOfBananas = numberOfBananas + 1;
+			} else {
+				console.log("It's not banana");
+			}
+
+	While loop:
+
+		while( some condition ) {
+			// code in here gets executed as long as the condition is true
+			// the computer checks the condition before each time,
+			// and if it is true, runs the code inside again
+		}
+
+		Example:
+
+			while(3 > 2) {
+				alert("Infinite loop!!!!");
+			}
+
+	For loop:
+
+		for( initialization ; condition ; counter update ) {
+			// the for loop header has 3 parts
+			// initialization is where you set some counter variable's starting value
+			// condition is the condition that is checked each time to see
+			// if the code in the loop should run again
+			// counter update is where your counter variable's value is updated
+		}
+
+		Example:
+			
+			for(i = 0; i < 10; i = i + 1) {
+				alert("Hello! The value of i is now " + i);
+			}
+
+	Arrays:
+
+		Declaration:
+			
+			var myCoolArray = [ 4, 3, "apple", false ];
+	
+		Accessing:
+
+			// Remember, the first index of an array is 0!
+
+			myCoolArray[0]; // this is 4
+			myCoolArray[2]; // this is "apple"
+			myCoolArray[1] > 2; // myCoolArray[1] is 3, so this evaluates to true
+
+		Setting:
+
+			myCoolArray[0] = "hello"; // now myCoolArray[0] is "hello" instead of 4
+			myCoolArray[4] = "goodbye"; // added a new item, "goodbye", onto the end of the array
+
+		Length:
+
+			We didn't cover this before, but arrays have an attribute called length,
+			that holds the number of elements in the array.
+
+			myCoolArray.length; // 5, after adding on "goodbye"
+
+	Now read the problems below and modify the code to solve them.
+
+*/
+
+
+/*
+	Problem 1: Just load example_1.html in a browser and run this function by
+	clicking the corresponding button.
+*/
+
+function problem1() {
+	alert("Problem 1 solved!");
+}
+
+/*
+	Problem 2: Modify the function below so that instead of alerting "Hello"
+	twice, it alerts "Hi, there!" 3 times.
+*/
+
+function problem2() {
+	
+	for(i = 0; i < 2; i = i + 1) {
+		alert("Hello");
+	}
+
+}
+
+/*
+	Problem 3: Modify the function below so that instead of logging all values
+	from 1 to 10, it logs every OTHER value
+*/
+
+function problem3() {
+
+	for(i = 1; i <= 10; i = i + 1) {
+		console.log(i);
+	}
+
+}
+
+/*
+	Problem 4: Modify the function below so, when you run it, the output is:
+
+	apple
+	orange
+	banana
+*/
+
+function problem4() {
+	
+	var fruitArray = ["apple", "orange", "banana"];
+
+	console.log(fruitArray[0]);
+	console.log(fruitArray[1]);
+	// add a line here!
+
+}
+
+/*
+	Problem 5: Look at the function below and try to predict what happens when you run it.
+	Then, modify the function so that when you run it, the output is:
+
+	apple
+	orange
+	banana
+*/
+
+function problem5() {
+	
+	var fruitArray = ["apple", "orange", "banana"];
+
+	for(int i = 0; i < 2; i = i + 1) {
+		console.log(fruitArray[i]);
+	}
+
+}
+
+/*
+	Problem 6: The function below is supposed to count the number of apples and bananas
+	in the array fruitArray. However, it doesn't correctly count the apples yet.
+	Read through the code and try to understand what's happening.
+	Then, modify the function so that it correctly counts and displays
+	the number of bananas and apples.
+*/
+
+function problem6() {
+	
+	var fruitArray = ["apple", "apple", "banana", "apple", "apple", "banana", "orange", "banana"];
+
+	var numBananas = 0;
+	var numApples = 0;
+
+	for(i = 0; i < fruitArray.length; i = i + 1) {
+
+		if(fruitArray[i] == "banana") {
+			numBananas = numBananas + 1;
+		}
+		
+		if(fruitArray[i] == "apple") {
+			// add a line here!
+		}
+
+	}
+	
+	console.log("Number of bananas: " + numBananas);
+	console.log("Number of apples: " + numApples);
+
+}
+
+/*
+	Problem 7: Hello, world!
+
+	Using the existing code in example_1.html and this file as an example,
+	write a Hello, world! program. You should create a new button in the html,
+	that when clicked, runs a function (that you write) called problem7. The function problem7
+	should log the words "Hello, world!" to the console.
+*/
+
+// Add some code here!
